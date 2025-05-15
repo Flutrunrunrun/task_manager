@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>极简任务管理器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>我的任务</h1>
+    
+    <form id="taskForm">
+        <input 
+            type="text" 
+            id="taskInput" 
+            placeholder="输入新任务..." 
+            required
+        >
+        <button type="submit">添加</button>
+    </form>
+    
+    <div class="filters">
+        <button id="showAll">全部</button>
+        <button id="showActive">未完成</button>
+        <button id="showCompleted">已完成</button>
+    </div>
+    
+    <div id="taskList"></div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
